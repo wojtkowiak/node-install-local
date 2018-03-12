@@ -9,7 +9,7 @@
     "build": "tsc -p .",
     "postbuild": "tslint -p .",
     "pretest": "npm run build",
-    "test": "mocha --timeout 10000 test/**/*.js",
+    "test": "mocha --timeout 100000 test/**/*.js",
     "posttest": "stryker run",
     "start": "tsc -w",
     "preversion": "npm t",
@@ -63,7 +63,7 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "mz": "^2.7.0"
   }
 }
